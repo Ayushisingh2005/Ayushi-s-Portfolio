@@ -124,7 +124,7 @@ const CERTS = [
 ];
 
 const BADGE_STATES = [
-  "◈ Software Engineer · Delhi, India ◈",
+  "◈ AI Developer · Delhi · India ◈",
   "◈ Full-Stack Developer ◈",
   "◈ AI/ML Engineer ◈",
   "◈ Open to Opportunities ◈",
