@@ -78,20 +78,31 @@ const PROJECTS = [
   },
   {
     id: 3,
-    name: "WeatherBot",
-    sub: "Forecast App + Telegram Bot",
-    desc: "Real-time weather intelligence with 5-day city-level forecasts and a Telegram bot delivering push alerts and on-demand weather updates for any location worldwide.",
-    stack: ["Python Flask","OpenWeatherMap API","Telegram Bot API","HTML/CSS/JS"],
-    metrics: ["Real-time data","5-day forecast","Push alerts"],
-    github: "https://github.com/Ayushisingh2005/Weather-Forecasting-Web-App-with-Telegram-Bot-Integration",
+    name: "JVM-MCP-Bridge",
+    sub: "AI Agent JVM Diagnostics",
+    desc: "Lightweight MCP server wrapping native JDK tools — gives AI agents like Claude real-time \"eyes\" into the JVM. Enables automated deadlock detection, memory leak analysis, and process discovery without any third-party agent.",
+    stack: ["Python","FastMCP","MCP Protocol","JDK Binaries","Claude / VS Code"],
+    metrics: ["Zero-dependency","Auto deadlock detect","Real-time heap analysis"],
+    github: "https://github.com/Ayushisingh2005/jvm-mcp-bridge",
     live: null,
-    icon: "⛈️",
-    color: "#FF9F1C",
-    glow: "rgba(255,159,28,0.5)",
+    icon: "☕",
+    color: "#00FF87",
+    glow: "rgba(0,255,135,0.5)",
   },
 ];
 
 const EXP = [
+  {
+    role: "Full Stack Development with AI Tools Intern",
+    company: "Edunet Foundation & EY",
+    period: "Sep 2025 – Feb 2026",
+    color: "#00F5FF",
+    pts: [
+      "Built full-stack web applications integrating AI tools across the entire development lifecycle.",
+      "Developed and deployed AI-augmented features using modern frameworks and cloud platforms.",
+      "Collaborated on end-to-end project delivery covering frontend, backend, and AI model integration.",
+    ],
+  },
   {
     role: "Infosys Springboard Intern",
     company: "Infosys Ltd.",
@@ -107,7 +118,7 @@ const EXP = [
     role: "Software Developer Trainee",
     company: "NCVET, Government of India",
     period: "Aug 2024 – Mar 2025",
-    color: "#00F5FF",
+    color: "#00FF87",
     pts: [
       "Designed software modules using Java, Python, and SQL for real-world government projects.",
       "Resolved coding issues and optimized application logic through structured debugging.",
@@ -844,17 +855,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Stats row */}
-          {/* <div style={{ display:"flex", gap:"2.2rem", justifyContent:"center", flexWrap:"wrap", marginBottom:"1.8rem", alignItems:"center", animation:"fadeUp .8s .62s both" }}>
-            <CountStat target={10}   label="Projects Built"   delay={0}   />
-            <div style={{ width:1, height:32, background:"rgba(255,255,255,0.08)" }}/>
-            <CountStat target={35}   suffix="+" label="Technologies"    delay={100} />
-            <div style={{ width:1, height:32, background:"rgba(255,255,255,0.08)" }}/>
-            <CountStat target={6}    label="Certifications"  delay={200} />
-            <div style={{ width:1, height:32, background:"rgba(255,255,255,0.08)" }}/>
-            <CountStat target={14}   suffix="+" label="Months Exp."      delay={300} />
-          </div> */}
-
           {/* Bio */}
           <p style={{
             color:"rgba(255,255,255,0.38)", fontSize:".88rem", maxWidth:520,
@@ -922,7 +922,7 @@ export default function App() {
             </div>
             <div className="glass" style={{ padding:"1.6rem" }}>
               <p className="sec-tag" style={{ marginBottom:".9rem" }}>Quick Info</p>
-              {[["Status","Open to Opportunities ✦"],["Email","ayushisingh1265@gmail.com"],["Phone","+91-7827276177"],["Location","Delhi, India"]].map(([k,v]) => (
+              {[["Status","Open to Opportunities ✦"],["Email","ayushisingh1265@gmail.com"],["Location","Delhi, India"]].map(([k,v]) => (
                 <div key={k} style={{ display:"flex", justifyContent:"space-between", padding:".42rem 0", borderBottom:"1px solid rgba(255,255,255,0.06)" }}>
                   <span style={{ fontFamily:"'Space Mono',monospace", color:"rgba(255,255,255,0.3)", fontSize:".64rem" }}>{k}</span>
                   <span style={{ fontFamily:"'Space Mono',monospace", color:"rgba(255,255,255,0.55)", fontSize:".64rem", textAlign:"right", maxWidth:"62%" }}>{v}</span>
@@ -1001,7 +1001,7 @@ export default function App() {
             <h2 className="sec-h2" style={{ marginBottom:"2.6rem" }}>Professional Journey</h2>
           </div>
           <div style={{ position:"relative" }}>
-            <div style={{ position:"absolute", left:19, top:0, bottom:0, width:1, background:"linear-gradient(180deg,rgba(123,97,255,0.5),rgba(0,245,255,0.3),transparent)" }}/>
+            <div style={{ position:"absolute", left:19, top:0, bottom:0, width:1, background:"linear-gradient(180deg,rgba(123,97,255,0.5),rgba(0,245,255,0.3),rgba(0,255,135,0.2),transparent)" }}/>
             <div style={{ display:"flex", flexDirection:"column", gap:"1.8rem" }}>
               {EXP.map((exp,i) => (
                 <div key={i} style={{ display:"flex", gap:"1.8rem", alignItems:"flex-start" }}>
@@ -1081,7 +1081,6 @@ export default function App() {
           <div className="two-col" style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:".9rem", marginBottom:"1.3rem", textAlign:"left" }}>
             {[
               { icon:"✉", label:"Email",    val:"ayushisingh1265@gmail.com",          href:"mailto:ayushisingh1265@gmail.com",                    col:"#00F5FF" },
-              { icon:"☎", label:"Phone",    val:"+91-7827276177",                      href:"tel:+917827276177",                                   col:"#7B61FF" },
               { icon:"⌘", label:"GitHub",   val:"Ayushisingh2005",                     href:"https://github.com/Ayushisingh2005",                  col:"#FF006E" },
               { icon:"⊕", label:"LinkedIn", val:"ayushi-singh-0773a830a",              href:"https://www.linkedin.com/in/ayushi-singh-0773a830a/", col:"#00F5FF" },
             ].map(item => (
